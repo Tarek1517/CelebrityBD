@@ -7,7 +7,7 @@
         <div>
           <NuxtLink to="/" class="flex items-center gap-2 mb-6">
             <img
-              src="/images/Logo4.png"
+              src="/images/Logo6.png"
               alt="ShopEase"
               class="h-12 rounded-lg"
             />
