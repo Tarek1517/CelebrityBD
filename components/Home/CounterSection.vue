@@ -91,7 +91,7 @@ const trendingCelebrities = [
           >
             Meet Bangladesh's Top
             <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
               >Celebraties</span
             >
           

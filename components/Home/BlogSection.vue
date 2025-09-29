@@ -61,7 +61,7 @@ const celebrityUpdates = [
       <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
         Latest Celebrity
         <span
-          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600"
+          class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
           >News & Updates</span
         >
       </h2>
@@ -86,7 +86,7 @@ const celebrityUpdates = [
     <!-- View All Button -->
     <div class="text-center mt-12">
       <button
-        class="group px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
+        class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
       >
         <span class="flex items-center justify-center space-x-3">
           <span>View All Updates</span>

@@ -51,7 +51,7 @@ const formatRelativeDate = (date) => {
       <!-- Category Badge -->
       <div class="absolute top-4 left-4">
         <span
-          class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm"
+          class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm"
         >
           {{ update.category }}
         </span>
@@ -134,7 +134,7 @@ const formatRelativeDate = (date) => {
 
         <a
           :href="update.link"
-          class="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm font-semibold rounded-xl transition-all duration-300 transform group-hover:translate-x-1 group-hover:shadow-lg"
+          class="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white text-sm font-semibold rounded-xl transition-all duration-300 transform group-hover:translate-x-1 group-hover:shadow-lg"
         >
           <span>Read</span>
           <Icon name="heroicons:arrow-right" class="w-4 h-4" />
