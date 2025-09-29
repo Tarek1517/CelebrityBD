@@ -32,7 +32,7 @@ const trendingCelebrities = [
     >
       <!-- Animated background elements -->
       <div
-        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-600/20 to-pink-500/10"
+        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/15 to-pink-500/10"
       ></div>
 
       <!-- Floating elements -->

@@ -17,8 +17,8 @@ const scrollToTop = () => {
 @import "tailwindcss";
 @import "@nuxt/ui";
 @theme {
-  --color-primary: #6b1fad;
-  --color-secondary: #ff3131;
+  --color-primary: #881747;
+  --color-secondary: #ff2b85;
   --color-tertiary: #1F2937;
 }
 

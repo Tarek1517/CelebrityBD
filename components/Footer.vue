@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-gray-300 pt-16 pb-10 mt-20">
+  <footer class="bg-primary/15 text-gray-300 pt-16 pb-10 mt-20">
     <div class="container mx-auto px-6 lg:px-12">
       <!-- Top Section -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
@@ -9,10 +9,10 @@
             <img
               src="/images/Logo6.png"
               alt="ShopEase"
-              class="h-12 rounded-lg"
+              class="h-20 rounded-lg"
             />
           </NuxtLink>
-          <p class="text-gray-400 mb-6 leading-relaxed">
+          <p class="text-black mb-6 leading-relaxed">
             Transforming the way you shop with quality products, seamless
             experience, and customer satisfaction.
           </p>
@@ -41,52 +41,52 @@
         <!-- Quick Links -->
         <div class="grid grid-cols-2 gap-8">
           <div>
-            <h3 class="text-white font-semibold text-lg mb-5">Company</h3>
+            <h3 class="text-black font-bold text-xl mb-5">Company</h3>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/about" class="hover:text-primary"
+                <NuxtLink to="/about" class="hover:text-primary text-gray-900"
                   >About Us</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/Extra/AppDownload" class="hover:text-primary"
+                <NuxtLink to="/Extra/AppDownload" class="hover:text-primary text-gray-900"
                   >App Download</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/careers" class="hover:text-primary"
+                <NuxtLink to="/careers" class="hover:text-primary text-gray-900"
                   >Careers</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/contact" class="hover:text-primary"
+                <NuxtLink to="/contact" class="hover:text-primary text-gray-900"
                   >Contact</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/blog" class="hover:text-primary">Blog</NuxtLink>
+                <NuxtLink to="/blog" class="hover:text-primary text-gray-900">Blog</NuxtLink>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 class="text-white font-semibold text-lg mb-5">Support</h3>
+            <h3 class="text-black font-semibold text-lg mb-5">Support</h3>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/faq" class="hover:text-primary">FAQs</NuxtLink>
+                <NuxtLink to="/faq" class="hover:text-primary text-gray-900">FAQs</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/shipping" class="hover:text-primary"
+                <NuxtLink to="/shipping" class="hover:text-primary text-gray-900"
                   >Shipping</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/returns" class="hover:text-primary"
+                <NuxtLink to="/returns" class="hover:text-primary text-gray-900"
                   >Returns</NuxtLink
                 >
               </li>
               <li>
-                <NuxtLink to="/tracking" class="hover:text-primary"
+                <NuxtLink to="/tracking" class="hover:text-primary text-gray-900"
                   >Order Tracking</NuxtLink
                 >
               </li>
@@ -96,27 +96,27 @@
 
         <!-- Policies & Newsletter -->
         <div>
-          <h3 class="text-white font-semibold text-lg mb-5">Policies</h3>
+          <h3 class="text-black font-semibold text-lg mb-5">Policies</h3>
           <ul class="space-y-3 mb-8">
             <li>
-              <NuxtLink to="/terms" class="hover:text-primary"
+              <NuxtLink to="/terms" class="hover:text-primary text-gray-900"
                 >Terms of Service</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/privacy" class="hover:text-primary"
+              <NuxtLink to="/privacy" class="hover:text-primary text-gray-900"
                 >Privacy Policy</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/seller-terms" class="hover:text-primary"
+              <NuxtLink to="/seller-terms" class="hover:text-primary text-gray-900"
                 >Seller Terms</NuxtLink
               >
             </li>
           </ul>
 
           <!-- Newsletter -->
-          <h4 class="text-white font-medium mb-3">
+          <h4 class="text-black font-medium mb-3">
             Subscribe to our newsletter
           </h4>
           <div class="flex gap-2">

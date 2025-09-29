@@ -41,7 +41,7 @@ const getCarName = (carName: string, index: number) => {
 
         <!-- Red Bar with Car Name -->
         <div
-          class="bg-gradient-to-r from-tertiary to-primary text-white text-center py-3 text-sm md:text-base font-semibold tracking-wide transition-all duration-500 group-hover:py-5"
+          class="bg-gradient-to-r from-primary to-secondary text-white text-center py-3 text-sm md:text-base font-semibold tracking-wide transition-all duration-500 group-hover:py-5"
         >
           {{ getCarName(car.name, index) }}
         </div>

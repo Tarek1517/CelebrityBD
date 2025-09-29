@@ -64,16 +64,16 @@ const closeMobileMenu = () => {
 
 <template>
   <header
-    class="sticky top-0 z-50 bg-gradient-to-r from-tertiary to-primary backdrop-blur-md border-b border-[#6b1fad]/50 shadow-xl"
+    class="sticky top-0 z-50 primary/15 backdrop-blur-md border-b border-[#6b1fad]/50 shadow-xl"
   >
     <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-24">
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center group relative" @click="closeMobileMenu">
           <img
             src="/images/Logo6.png"
             alt="Celebrity Hub"
-            class="h-auto w-24 rounded-full"
+            class="h-auto w-28 rounded-full"
           />
         </NuxtLink>
 
@@ -87,18 +87,18 @@ const closeMobileMenu = () => {
             class="relative"
           >
             <button
-              class="px-4 py-2 text-gray-200 font-medium hover:text-[#ff3131] transition-all flex items-center group relative"
-              :class="{ 'text-[#ff3131]': activeMenu === index }"
+              class="px-4 py-2 text-black font-medium hover:text-primary transition-all flex items-center group relative"
+              :class="{ 'text-primary': activeMenu === index }"
             >
               <span class="relative z-10">{{ menu.title }}</span>
               <span
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#ff3131] transform -translate-x-1/2 transition-all duration-300 group-hover:w-4/5"
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transform -translate-x-1/2 transition-all duration-300 group-hover:w-4/5"
                 :class="{ 'w-4/5': activeMenu === index }"
               ></span>
               <Icon
                 name="mdi:chevron-down"
-                class="ml-1.5 text-gray-400 text-lg transition-transform duration-200 group-hover:rotate-180 group-hover:text-[#ff3131]"
-                :class="{ 'rotate-180 text-[#ff3131]': activeMenu === index }"
+                class="ml-1.5 text-primary text-lg transition-transform duration-200 group-hover:rotate-180 group-hover:text-primary"
+                :class="{ 'rotate-180 text-primary': activeMenu === index }"
               />
             </button>
 
@@ -113,16 +113,16 @@ const closeMobileMenu = () => {
                     v-for="(item, i) in menu.items"
                     :key="i"
                     to="#"
-                    class="px-5 py-3 flex items-center text-gray-200 hover:bg-[#6b1fad]/30 hover:text-white transition-all duration-200 group border-b border-gray-700/50 last:border-b-0"
+                    class="px-5 py-3 flex items-center text-gray-200 hover:bg-primary/30 hover:text-white transition-all duration-200 group border-b border-gray-700/50 last:border-b-0"
                   >
                     <Icon
                       :name="item.icon"
-                      class="mr-3 text-[#ff3131] text-lg group-hover:scale-110 transition-transform"
+                      class="mr-3 text-primary text-lg group-hover:scale-110 transition-transform"
                     />
                     <span class="font-medium">{{ item.title }}</span>
                     <Icon
                       name="mdi:chevron-right"
-                      class="ml-auto text-gray-500 group-hover:text-[#ff3131] transition-colors"
+                      class="ml-auto text-primary group-hover:text-[#ff3131] transition-colors"
                     />
                   </NuxtLink>
                 </div>
@@ -163,7 +163,7 @@ const closeMobileMenu = () => {
           <!-- CTA Button -->
           <NuxtLink
             to="#"
-            class="hidden  border-2 border-white xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-gray-800 to-primary/80 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
+            class="hidden  border-2 border-white xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
           >
             <Icon
               name="material-symbols:account-circle"
