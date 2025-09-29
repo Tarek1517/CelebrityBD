@@ -169,7 +169,7 @@ const closeMobileMenu = () => {
               name="material-symbols:account-circle"
               class="mr-2 text-lg group-hover:scale-110 transition-transform"
             />
-            <span>Submit</span>
+            <span>Submit Profile</span>
           </NuxtLink>
 
           <!-- Mobile Menu Toggle -->

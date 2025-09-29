@@ -31,7 +31,7 @@ const getCarName = (carName: string, index: number) => {
         @mouseleave="activeIndex = null"
       >
         <!-- Car Image -->
-        <div class="h-[500px] w-full overflow-hidden relative">
+        <div class="h-[550px] w-full overflow-hidden relative">
           <img
             :src="car.image"
             :alt="car.name"

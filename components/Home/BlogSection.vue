@@ -1,114 +1,101 @@
 <script setup>
-const blogs = [
+const celebrityUpdates = [
   {
     id: 1,
-    title: "How to Import Your Dream Car Easily",
-    category: "Guides",
+    title: "Sakib Khan's New Movie Breaks Box Office Records",
+    category: "Film News",
     excerpt:
-      "Learn step-by-step how to import cars from Japan with minimal hassle and maximum savings.",
-    image: "/images/blog1.jpg",
-    author: "John Doe",
+      "The superstar's latest release earns 10 crore BDT in opening weekend, setting new benchmarks for Bangladeshi cinema.",
+    image: "/images/sakibKhan.jpg",
+    author: "Film Critic",
     authorImage: "/images/avater1.png",
-    link: "/blogs/how-to-import-car",
-    publishDate: "2023-11-15"
-  },
-  {
-    id: 2,
-    title: "Top 5 Reliable Car Brands in 2025",
-    category: "Reviews",
-    excerpt:
-      "We break down the most reliable brands this year, helping you choose wisely.",
-    image: "/images/blog2.jpg",
-    author: "Sarah Ali",
-    authorImage: "/images/avater1.png",
-    link: "/blogs/reliable-car-brands",
-    publishDate: "2023-11-10"
+    link: "/updates/sakib-khan-box-office",
+    publishDate: "2024-01-15",
+    views: "25K",
+    likes: "4.2K",
   },
   {
     id: 3,
-    title: "Why Auctions Are the Future of Car Buying",
-    category: "Insights",
+    title: "Sabila Nur's Fashion Line Launch Creates Buzz",
+    category: "Fashion",
     excerpt:
-      "Discover why car auctions are becoming increasingly popular worldwide.",
-    image: "/images/counter.jpg",
-    author: "Mike Lee",
+      "The popular actress ventures into fashion design with her new sustainable clothing collection.",
+    image: "/images/sabilanur.jpg",
+    author: "Fashion Editor",
     authorImage: "/images/avater1.png",
-    link: "/blogs/car-auctions-future",
-    publishDate: "2023-11-05"
+    link: "/updates/sabila-fashion-line",
+    publishDate: "2024-01-10",
+    views: "15K",
+    likes: "2.9K",
+  },
+  {
+    id: 4,
+    title: "Chanchal Chowdhury Wins Best Actor Award",
+    category: "Awards",
+    excerpt:
+      "Veteran actor receives prestigious national award for his outstanding performance in recent drama series.",
+    image: "/images/chancal.jpg",
+    author: "Entertainment Desk",
+    authorImage: "/images/avater1.png",
+    link: "/updates/chanchal-award",
+    publishDate: "2024-01-08",
+    views: "22K",
+    likes: "4.5K",
   },
 ];
 </script>
 
 <template>
-  <div class="w-full py-20 bg-gradient-to-br from-gray-50 to-white">
+  <div
+    class="w-full pb-20 bg-gradient-to-br from-slate-50 via-white to-slate-100"
+  >
     <!-- Section Header -->
-    <div class="text-center mb-14">
+    <div class="text-center mb-16">
       <div
-        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full text-sm font-semibold mb-4 shadow-lg"
+        class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500/10 to-purple-500/10 text-pink-600 rounded-full text-sm font-semibold mb-6 shadow-sm border border-pink-200"
       >
-        <Icon name="heroicons:newspaper" class="w-4 h-4 mr-2 animate-pulse" />
-        Latest Articles
+        <Icon name="heroicons:newspaper" class="w-5 h-5 mr-2" />
+        Celebrity Updates
       </div>
 
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-        Our Recent
+      <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+        Latest Celebrity
         <span
-          class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
-          >News & Articles</span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600"
+          >News & Updates</span
         >
       </h2>
-      <p
-        class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
-      >
-        Discover expert insights, guides, and reviews to help you make informed
-        decisions about your next vehicle.
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Stay updated with the latest news, achievements, and projects from your
+        favorite Bangladeshi celebrities.
       </p>
     </div>
 
-    <!-- Blog Carousel -->
-    <div class="container mx-auto px-6 mt-12">
-      <UCarousel
-        :items="blogs"
-        loop
-        auto-scroll
-        :slides-per-view="3"
-        :slide-to-scroll="1"
-        class="overflow-visible"
-        :ui="{ item: 'basis-full sm:basis-1/2 lg:basis-1/3 p-4' }"
+    <!-- Updates Grid - Showing exactly 3 cards -->
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <BlogCard
+          v-for="update in celebrityUpdates"
+          :key="update.id"
+          :update="update"
+          class="w-full h-[500px]"
+        />
+      </div>
+    </div>
+
+    <!-- View All Button -->
+    <div class="text-center mt-12">
+      <button
+        class="group px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
       >
-        <template #default="{ item }">
-          <!-- Equal height wrapper -->
-          <div class="h-[450px]">
-            <BlogCard :blog="item" class="w-full h-full flex flex-col" />
-          </div>
-        </template>
-      </UCarousel>
+        <span class="flex items-center justify-center space-x-3">
+          <span>View All Updates</span>
+          <Icon
+            name="heroicons:arrow-right"
+            class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+          />
+        </span>
+      </button>
     </div>
   </div>
 </template>
-
-<style scoped>
-/* Custom scrollbar for carousel */
-:deep(.carousel-container) {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
-}
-
-:deep(.carousel-container::-webkit-scrollbar) {
-  height: 6px;
-}
-
-:deep(.carousel-container::-webkit-scrollbar-track) {
-  background: transparent;
-  border-radius: 3px;
-}
-
-:deep(.carousel-container::-webkit-scrollbar-thumb) {
-  background: rgba(99, 102, 241, 0.3);
-  border-radius: 3px;
-}
-
-:deep(.carousel-container::-webkit-scrollbar-thumb:hover) {
-  background: rgba(99, 102, 241, 0.5);
-}
-</style>

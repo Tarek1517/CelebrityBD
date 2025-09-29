@@ -3,8 +3,8 @@
   <HomeHeroSection />
   <HomeCategoriesSection />
   <HomeCelebsSection />
-  <!-- <HomeBrandSection /> -->
-  <!-- <HomeCounterSection /> -->
+  <HomeTrendingSection />
+  <HomeCounterSection />
   <!-- <HomeAppSection /> -->
-  <!-- <HomeBlogSection /> -->
+  <HomeBlogSection />
 </template>

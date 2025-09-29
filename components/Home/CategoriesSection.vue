@@ -96,7 +96,7 @@ const items = [
             <!-- Action Button -->
             <div class="relative z-10">
               <button
-                class="group/btn w-full py-2 bg-gradient-to-r border border-primary/15 from-gray-100 to-gray-200 hover:from-blue-500 hover:to-purple-600 rounded-xl text-gray-700 hover:text-white font-medium transition-all duration-500 shadow-md hover:shadow-xl transform hover:-translate-y-1"
+                class="group/btn w-full py-2 bg-gradient-to-r border border-primary/15 from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl text-white font-medium transition-all duration-500 shadow-md hover:shadow-xl transform hover:-translate-y-1"
               >
                 <span class="flex items-center justify-center space-x-2">
                   <span>Explore</span>
