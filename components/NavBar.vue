@@ -71,9 +71,9 @@ const closeMobileMenu = () => {
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center group relative" @click="closeMobileMenu">
           <img
-            src="/images/Logo4.png"
+            src="/images/Logo6.png"
             alt="Celebrity Hub"
-            class="h-auto w-48 rounded-full"
+            class="h-auto w-24 rounded-full"
           />
         </NuxtLink>
 
