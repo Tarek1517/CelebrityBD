@@ -59,11 +59,16 @@ const trendingCelebrities = [
 
 <template>
   <div
-    class="w-full py-20 bg-gradient-to-br from-slate-50 via-white to-slate-100 relative overflow-hidden"
+    class="w-full pb-20 pt-10 bg-gradient-to-br from-slate-50 via-white to-slate-100 relative overflow-hidden"
   >
     <!-- Section Header -->
     <div class="text-center mb-16 relative z-10">
-      
+      <div
+        class="inline-flex items-center border border-primary/15 px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 text-primary rounded-full text-sm font-semibold mb-3 shadow-sm"
+      >
+        <Icon name="ic:baseline-star-rate" class="w-5 h-5 mr-2" />
+        Trending Stars
+      </div>
       <h2 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
         This Week's
         <span
@@ -99,17 +104,19 @@ const trendingCelebrities = [
 
     <!-- View All Trending Button -->
     <div class="text-center mt-12 relative z-10">
-      <button
-        class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
-      >
-        <span class="flex items-center justify-center space-x-3">
-          <span>View All Trending</span>
-          <Icon
-            name="heroicons:arrow-right"
-            class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-          />
-        </span>
-      </button>
+      <NuxtLink to="/Trending">
+        <button
+          class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
+        >
+          <span class="flex items-center justify-center space-x-3">
+            <span>View All Trending</span>
+            <Icon
+              name="heroicons:arrow-right"
+              class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+            />
+          </span>
+        </button>
+      </NuxtLink>
     </div>
   </div>
 </template>

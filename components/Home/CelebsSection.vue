@@ -10,7 +10,7 @@ const celebrities = [
     followers: "2.5M",
     rating: 4.9,
     projects: 85,
-    verified: true
+    verified: true,
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const celebrities = [
     followers: "8.7M",
     rating: 4.8,
     projects: 250,
-    verified: true
+    verified: true,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const celebrities = [
     followers: "1.8M",
     rating: 4.7,
     projects: 120,
-    verified: true
+    verified: true,
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const celebrities = [
     followers: "1.2M",
     rating: 5.0,
     projects: 45,
-    verified: true
+    verified: true,
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const celebrities = [
     followers: "3.1M",
     rating: 4.6,
     projects: 65,
-    verified: true
+    verified: true,
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const celebrities = [
     followers: "2.9M",
     rating: 4.5,
     projects: 55,
-    verified: true
+    verified: true,
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ const celebrities = [
     followers: "2.3M",
     rating: 4.8,
     projects: 95,
-    verified: true
+    verified: true,
   },
 ];
 
@@ -96,7 +96,7 @@ const filteredCelebrities = computed(() => {
   if (activeCategory.value === "All") {
     return celebrities;
   }
-  return celebrities.filter(celeb => celeb.category === activeCategory.value);
+  return celebrities.filter((celeb) => celeb.category === activeCategory.value);
 });
 </script>
 
@@ -116,19 +116,24 @@ const filteredCelebrities = computed(() => {
       <!-- Section Header -->
       <div class="text-center mb-10">
         <div
-          class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 text-primary rounded-full text-sm font-semibold mb-3 shadow-sm"
+          class="inline-flex items-center border border-primary/15 px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 text-primary rounded-full text-sm font-semibold mb-3 shadow-sm"
         >
           <Icon name="heroicons:sparkles" class="w-5 h-5 mr-2" />
           Featured Bangladeshi Celebrities
         </div>
-        <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+        <h2
+          class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+        >
           Discover Bangladesh's
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+          >
             Celebrated Icons
           </span>
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Meet the most influential and beloved personalities from Bangladesh who are making waves in entertainment, sports, and social impact.
+          Meet the most influential and beloved personalities from Bangladesh
+          who are making waves in entertainment, sports, and social impact.
         </p>
       </div>
 
@@ -142,7 +147,7 @@ const filteredCelebrities = computed(() => {
             'px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1',
             activeCategory === category
               ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
-              : 'bg-gray-200 text-gray-700 border border-gray-200 hover:border-primary/30 hover:shadow-md'
+              : 'bg-gray-200 text-gray-700 border border-gray-200 hover:border-primary/30 hover:shadow-md',
           ]"
         >
           {{ category }}
@@ -160,26 +165,29 @@ const filteredCelebrities = computed(() => {
       </div>
 
       <!-- Show More Button -->
-      <div v-if="visibleCelebrities < filteredCelebrities.length" class="text-center">
-        <button
-          @click="showMore"
-          class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
-        >
-          <span class="flex items-center justify-center space-x-3">
-            <span>Load More Celebrities</span>
-            <Icon name="heroicons:arrow-down" class="w-5 h-5 transform group-hover:translate-y-1 transition-transform" />
-          </span>
-        </button>
+      <div class="flex justify-center">
+        <NuxtLink to="/profile">
+          <button
+            class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
+          >
+            <span class="flex items-center justify-center space-x-3">
+              <span>All Celebrities</span>
+              <Icon
+                name="heroicons:arrow-down"
+                class="w-5 h-5 transform group-hover:translate-y-1 transition-transform"
+              />
+            </span>
+          </button>
+        </NuxtLink>
       </div>
-
-      
     </div>
   </section>
 </template>
 
 <style>
 @keyframes pulse-slow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
   }
   50% {

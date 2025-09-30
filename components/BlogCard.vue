@@ -35,7 +35,7 @@ const formatRelativeDate = (date) => {
 
 <template>
   <div
-    class="group bg-white rounded-3xl overflow-hidden flex flex-col h-full shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/50 hover:border-pink-200/70 hover:-translate-y-2"
+    class="group bg-white rounded-xl overflow-hidden flex flex-col h-full shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/50 hover:border-pink-200/70 hover:-translate-y-2"
   >
     <!-- Image Container -->
     <div class="relative overflow-hidden h-60">
@@ -95,12 +95,14 @@ const formatRelativeDate = (date) => {
 
     <!-- Content -->
     <div class="p-6 flex flex-col flex-grow">
-      <!-- Title -->
-      <h3
-        class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600 transition-all duration-300"
-      >
-        {{ update.title }}
-      </h3>
+      <NuxtLink to="/Blog/Show">
+        <!-- Title -->
+        <h3
+          class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600 transition-all duration-300"
+        >
+          {{ update.title }}
+        </h3>
+      </NuxtLink>
 
       <!-- Excerpt -->
       <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
@@ -131,14 +133,15 @@ const formatRelativeDate = (date) => {
             }}</span>
           </div>
         </div>
-
-        <a
-          :href="update.link"
-          class="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white text-sm font-semibold rounded-xl transition-all duration-300 transform group-hover:translate-x-1 group-hover:shadow-lg"
-        >
-          <span>Read</span>
-          <Icon name="heroicons:arrow-right" class="w-4 h-4" />
-        </a>
+        <NuxtLink to="/Blog/Show">
+          <a
+            :href="update.link"
+            class="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white text-sm font-semibold rounded-xl transition-all duration-300 transform group-hover:translate-x-1 group-hover:shadow-lg"
+          >
+            <span>Read</span>
+            <Icon name="heroicons:arrow-right" class="w-4 h-4" />
+          </a>
+        </NuxtLink>
       </div>
     </div>
 

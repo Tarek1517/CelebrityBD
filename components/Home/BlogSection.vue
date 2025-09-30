@@ -6,7 +6,7 @@ const celebrityUpdates = [
     category: "Film News",
     excerpt:
       "The superstar's latest release earns 10 crore BDT in opening weekend, setting new benchmarks for Bangladeshi cinema.",
-    image: "/images/sakibKhan.jpg",
+    image: "/images/taandob.jpg",
     author: "Film Critic",
     authorImage: "/images/avater1.png",
     link: "/updates/sakib-khan-box-office",
@@ -85,17 +85,19 @@ const celebrityUpdates = [
 
     <!-- View All Button -->
     <div class="text-center mt-12">
-      <button
-        class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
-      >
-        <span class="flex items-center justify-center space-x-3">
-          <span>View All Updates</span>
-          <Icon
-            name="heroicons:arrow-right"
-            class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-          />
-        </span>
-      </button>
+      <NuxtLink to="/Blog">
+        <button
+          class="group px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg rounded-2xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
+        >
+          <span class="flex items-center justify-center space-x-3">
+            <span>View All Updates</span>
+            <Icon
+              name="heroicons:arrow-right"
+              class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+            />
+          </span>
+        </button>
+      </NuxtLink>
     </div>
   </div>
 </template>

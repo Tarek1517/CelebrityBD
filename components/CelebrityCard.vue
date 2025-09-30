@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <NuxtLink to="/profile/show" class="block group">
     <div
-      class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl border border-gray-200/50 h-full flex flex-col hover:-translate-y-2"
+      class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 hover:shadow-2xl border border-primary/15 h-full flex flex-col hover:-translate-y-2"
     >
       <!-- Image Section with Overlay Content -->
       <div class="relative h-72 overflow-hidden">
@@ -18,7 +18,7 @@ const props = defineProps({
         <img
           :src="celebrity.image"
           :alt="celebrity.name"
-          class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+          class="w-full h-full object-cover cursor-pointer object-top transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
         />
 
@@ -144,14 +144,14 @@ const props = defineProps({
         <!-- Action Buttons -->
         <div class="flex space-x-3">
           <button
-            class="flex-1 bg-gradient-to-r from-primary to-secondary text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-sm"
+            class="flex-1 bg-gradient-to-r cursor-pointer from-primary to-secondary text-white font-semibold py-2 px-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-sm"
           >
             View Profile
           </button>
           <button
             class="p-3 border border-primary text-primary rounded-xl hover:bg-primary hover:text-white transition-all duration-300"
           >
-            <Icon name="heroicons:envelope" class="w-5 h-5" />
+            <Icon name="material-symbols:stacked-email-outline-sharp" class="text-xl" />
           </button>
         </div>
       </div>

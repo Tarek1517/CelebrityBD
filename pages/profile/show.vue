@@ -320,7 +320,7 @@ const formatRelativeDate = (date) => {
                       'px-8 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg',
                       isFollowing
                         ? 'bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gray-200'
-                        : 'bg-gradient-to-r from-pink-500 to-purple-600 text-white hover:from-pink-600 hover:to-purple-700',
+                        : 'bg-gradient-to-r from-primary to-secondary text-white hover:from-pink-600 hover:to-purple-700',
                     ]"
                   >
                     <span class="flex items-center space-x-2">
@@ -334,7 +334,7 @@ const formatRelativeDate = (date) => {
                     </span>
                   </button>
                   <button
-                    class="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-2xl font-semibold hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1"
+                    class="px-6 py-3 border-2 border-primary text-primary rounded-2xl font-semibold hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <Icon name="heroicons:envelope" class="w-5 h-5" />
                   </button>
@@ -357,14 +357,14 @@ const formatRelativeDate = (date) => {
             <div
               v-for="(stat, key, index) in celebrity.stats"
               :key="key"
-              class="group text-center p-6 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-2xl border border-gray-200/50 hover:border-pink-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl cursor-pointer"
+              class="group text-center p-6 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-2xl border border-primary/15 hover:border-pink-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl cursor-pointer"
             >
               <div
-                class="text-3xl font-black bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent"
+                class="text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
               >
                 {{ stat }}+
               </div>
-              <div class="text-gray-600 mt-2 font-medium capitalize">
+              <div class="text-gray-900 mt-2 font-medium capitalize">
                 {{ key.replace(/([A-Z])/g, " $1").trim() }}
               </div>
             </div>
@@ -474,10 +474,10 @@ const formatRelativeDate = (date) => {
                   :key="platform"
                   :href="`https://${platform}.com/${username}`"
                   target="_blank"
-                  class="group flex items-center space-x-3 px-6 py-4 bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                  class="group flex items-center space-x-3 px-6 py-4 bg-white rounded-2xl shadow-lg border border-primary/15 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
                 >
                   <div
-                    class="p-2 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 group-hover:scale-110 transition-transform duration-300"
+                    class="p-2 rounded-xl bg-gradient-to-r from-primary to-secondary group-hover:scale-110 transition-transform duration-300"
                   >
                     <Icon
                       :name="`mdi:${platform}`"

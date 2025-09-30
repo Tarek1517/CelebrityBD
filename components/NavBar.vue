@@ -106,14 +106,14 @@ const closeMobileMenu = () => {
             <transition name="dropdown">
               <div
                 v-if="activeMenu === index"
-                class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-72 bg-gray-800/95 backdrop-blur-lg rounded-xl shadow-2xl z-50 overflow-hidden border border-[#6b1fad]/50"
+                class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-72 bg-white backdrop-blur-lg rounded-xl shadow-2xl z-50 overflow-hidden border border-secondary/25"
               >
                 <div class="py-2">
                   <NuxtLink
                     v-for="(item, i) in menu.items"
                     :key="i"
                     to="#"
-                    class="px-5 py-3 flex items-center text-gray-200 hover:bg-primary/30 hover:text-white transition-all duration-200 group border-b border-gray-700/50 last:border-b-0"
+                    class="px-5 py-3 flex items-center text-black hover:text-primary transition-all duration-200 group border-b border-gray-700/50 last:border-b-0"
                   >
                     <Icon
                       :name="item.icon"
@@ -140,14 +140,14 @@ const closeMobileMenu = () => {
                 v-model="searchQuery"
                 type="text"
                 placeholder="Search celebrities, movies, news..."
-                class="pl-12 pr-5 py-3 border-0 bg-gray-800/80 rounded-full focus:ring-2 focus:ring-[#ff3131]/50 focus:bg-gray-700 w-56 transition-all duration-300 group-hover:w-64 focus:w-64 shadow-inner text-white placeholder-gray-400"
+                class="pl-12 pr-5 py-3 border border-primary/25 bg-white rounded-full focus:ring-primary/50 focus:bg-primary/25 w-56 transition-all duration-300 group-hover:w-64 focus:w-64 shadow-inner text-white placeholder-gray-500"
               />
               <div
                 class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none"
               >
                 <Icon
                   name="mdi:magnify"
-                  class="text-xl text-gray-400 group-hover:text-[#ff3131] transition-colors"
+                  class="text-xl text-primary group-hover:text-[#ff3131] transition-colors"
                 />
               </div>
               <button
