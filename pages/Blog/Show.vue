@@ -382,7 +382,7 @@ const formatDate = (dateStr) => {
                   <textarea
                     v-model="review.reviewMassage"
                     rows="5"
-                    class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
+                    class="w-full p-4 border border-primary/25 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
                     placeholder="What did you think about Sakib Khan's performance in Tandob?..."
                   ></textarea>
                 </div>
@@ -396,7 +396,7 @@ const formatDate = (dateStr) => {
                     <input
                       v-model="review.name"
                       type="text"
-                      class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
+                      class="w-full p-4 border border-primary/25 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -408,7 +408,7 @@ const formatDate = (dateStr) => {
                     <input
                       v-model="review.email"
                       type="email"
-                      class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
+                      class="w-full p-4 border border-primary/25 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-lg"
                       placeholder="your.email@example.com"
                     />
                   </div>

@@ -64,7 +64,7 @@ const trendingCelebrities = [
                 ></div>
                 <Icon
                   name="heroicons:play-20-solid"
-                  class="w-12 h-12 text-white relative z-10 ml-1 transition-transform group-hover:scale-110"
+                  class="text-4xl text-white relative z-10 ml-1 transition-transform group-hover:scale-110"
                 />
               </UButton>
               <template #body>
