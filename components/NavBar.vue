@@ -69,7 +69,11 @@ const closeMobileMenu = () => {
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-24">
         <!-- Logo -->
-        <NuxtLink to="/" class="flex items-center group relative" @click="closeMobileMenu">
+        <NuxtLink
+          to="/"
+          class="flex items-center group relative"
+          @click="closeMobileMenu"
+        >
           <img
             src="/images/Logo6.png"
             alt="Celebrity Hub"
@@ -162,8 +166,8 @@ const closeMobileMenu = () => {
 
           <!-- CTA Button -->
           <NuxtLink
-            to="#"
-            class="hidden  border-2 border-white xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
+            to="/Form"
+            class="hidden border-2 border-white xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
           >
             <Icon
               name="material-symbols:account-circle"
@@ -177,9 +181,9 @@ const closeMobileMenu = () => {
             @click="toggleMobileMenu"
             class="lg:hidden p-2.5 rounded-full bg-gray-800/80 hover:bg-gray-700 transition-colors"
           >
-            <Icon 
-              :name="isMobileMenuOpen ? 'mdi:close' : 'mdi:menu'" 
-              class="text-2xl text-white" 
+            <Icon
+              :name="isMobileMenuOpen ? 'mdi:close' : 'mdi:menu'"
+              class="text-2xl text-white"
             />
           </button>
         </div>
@@ -208,11 +212,8 @@ const closeMobileMenu = () => {
                   :class="{ 'rotate-180': activeMenu === index }"
                 />
               </button>
-              
-              <div
-                v-if="activeMenu === index"
-                class="bg-gray-900/50 pl-5"
-              >
+
+              <div v-if="activeMenu === index" class="bg-gray-900/50 pl-5">
                 <NuxtLink
                   v-for="(item, i) in menu.items"
                   :key="i"
@@ -220,15 +221,12 @@ const closeMobileMenu = () => {
                   @click="closeMobileMenu"
                   class="block px-5 py-3 flex items-center text-gray-300 hover:text-white transition-colors border-b border-gray-800 last:border-b-0"
                 >
-                  <Icon
-                    :name="item.icon"
-                    class="mr-3 text-[#ff3131] text-lg"
-                  />
+                  <Icon :name="item.icon" class="mr-3 text-[#ff3131] text-lg" />
                   <span>{{ item.title }}</span>
                 </NuxtLink>
               </div>
             </div>
-            
+
             <!-- Mobile Search -->
             <div class="px-5 py-4 border-t border-gray-700/50">
               <div class="relative">
@@ -241,14 +239,11 @@ const closeMobileMenu = () => {
                 <div
                   class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none"
                 >
-                  <Icon
-                    name="mdi:magnify"
-                    class="text-xl text-gray-400"
-                  />
+                  <Icon name="mdi:magnify" class="text-xl text-gray-400" />
                 </div>
               </div>
             </div>
-            
+
             <!-- Mobile Submit Profile Button -->
             <div class="px-5 pb-4">
               <NuxtLink

@@ -1,12 +1,14 @@
 <script setup lang="ts">
 // Define celebrity categories with counts
 const items = [
-  { title: "Movie Stars", icon: "mdi:movie", count: "1.2K" },
-  { title: "Musicians", icon: "mdi:music", count: "856" },
-  { title: "YouTubers", icon: "mdi:youtube", count: "2.4K" },
-  { title: "Sports Stars", icon: "mdi:trophy", count: "742" },
+  { title: "Footballers", icon: "mdi:soccer", count: "1.2K" },
+  { title: "Cricketers", icon: "mdi:cricket", count: "856" },
+  { title: "Actors", icon: "mdi:theater", count: "2.4K" },
+  { title: "Actress", icon: "mdi:account-star", count: "2.1K" },
+  { title: "Director", icon: "mdi:movie-open", count: "742" },
   { title: "Influencers", icon: "mdi:instagram", count: "3.1K" },
-  { title: "Bloggers", icon: "mdi:pen", count: "1.8K" },
+  { title: "Politicians", icon: "mdi:account-tie", count: "1.8K" },
+  { title: "Islamic Scholars", icon: "mdi:book-open-variant", count: "925" },
 ];
 </script>
 
