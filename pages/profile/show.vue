@@ -25,32 +25,32 @@ const celebrity = {
     twitter: "sakibkhanbd",
     youtube: "SakibKhanOfficial",
   },
-recentProjects: [
-  {
-    title: "Tandob",
-    year: 2025,
-    role: "Lead Actor",
-    image: "/images/taandob.jpg",
-    rating: 4.8,
-    boxOffice: "৳18.3Cr",
-  },
-  {
-    title: "Darad",
-    year: 2024,
-    role: "Lead Actor",
-    image: "/images/dard.jpg",
-    rating: 4.4,
-    boxOffice: "৳10.2Cr",
-  },
-  {
-    title: "Toofan",
-    year: 2024,
-    role: "Lead Actor",
-   image: "/images/toofan.jpg",
-    rating: 4.6,
-    boxOffice: "৳15.39Cr",
-  },
-],
+  recentProjects: [
+    {
+      title: "Tandob",
+      year: 2025,
+      role: "Lead Actor",
+      image: "/images/taandob.jpg",
+      rating: 4.8,
+      boxOffice: "৳18.3Cr",
+    },
+    {
+      title: "Darad",
+      year: 2024,
+      role: "Lead Actor",
+      image: "/images/dard.jpg",
+      rating: 4.4,
+      boxOffice: "৳10.2Cr",
+    },
+    {
+      title: "Toofan",
+      year: 2024,
+      role: "Lead Actor",
+      image: "/images/toofan.jpg",
+      rating: 4.6,
+      boxOffice: "৳15.39Cr",
+    },
+  ],
 
   achievements: [
     {

@@ -64,7 +64,7 @@ const closeMobileMenu = () => {
 
 <template>
   <header
-    class="sticky top-0 z-50 primary/15 backdrop-blur-md border-b border-[#6b1fad]/50 shadow-xl"
+    class="sticky top-0 z-50 primary/15 backdrop-blur-md shadow-xl"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-24">
@@ -163,19 +163,29 @@ const closeMobileMenu = () => {
               </button>
             </div>
           </div>
-
-          <!-- CTA Button -->
-          <NuxtLink
-            to="/Form"
-            class="hidden border-2 border-white xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
-          >
-            <Icon
-              name="material-symbols:account-circle"
-              class="mr-2 text-lg group-hover:scale-110 transition-transform"
-            />
-            <span>Submit Profile</span>
-          </NuxtLink>
-
+          <div class="flex gap-1">
+            <NuxtLink
+              to="/Auth/login-Register"
+              class="hidden border-2 border-primary/55 xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary/15 to-secondary/15 hover:from-primary hover:to-secondary text-primary hover:text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
+            >
+              <Icon
+                name="material-symbols:account-circle"
+                class="mr-2 text-lg group-hover:scale-110 transition-transform"
+              />
+              <span>Login</span>
+            </NuxtLink>
+            <!-- CTA Button -->
+            <NuxtLink
+              to="/Form"
+              class="hidden border-2 border-primary/55 xl:flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-secondary hover:from-primary/15 hover:to-secondary/15 text-white hover:text-primary font-medium rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] group"
+            >
+              <Icon
+                name="material-symbols:account-circle"
+                class="mr-2 text-lg group-hover:scale-110 transition-transform"
+              />
+              <span>Submit Profile</span>
+            </NuxtLink>
+          </div>
           <!-- Mobile Menu Toggle -->
           <button
             @click="toggleMobileMenu"
